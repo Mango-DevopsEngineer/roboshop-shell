@@ -1,4 +1,4 @@
-echo -e "\e[31mHInstalling the bginx server\e[0m"
+echo -e "\e[31mInstalling the bginx server\e[0m"
 yum install nginx -y
 
 echo -e "\e[32mRemove the old content\e[0m"
