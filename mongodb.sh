@@ -4,6 +4,7 @@ cp mongodb.repo /etc/yum.repos.d/mongo.repo &>>/tmp/roboshop.log
 echo -e "\e[32mInstalling the mongodb server\e[0m"
 yum install mongodb-org -y &>>/tmp/roboshop.log
 
+echo -e "\e[33mupdate listen address\e[0m"
 sed -i -e 's/127.0.0.0/0.0.0.0/' /etc/mongod.conf
 
 echo -e "\e[34mstarting nginx server\e[0m"
